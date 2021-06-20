@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - Kokoa Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-lock"></i>
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span>
+          <i class="fas fa-search fa-lg"></i>
+        </span>
+        <span class="badge--parent">
+          <span class="badge badge--new"></span>
+          <a href="settings.html">
+            <i class="fas fa-cog fa-lg spin-cog"></i>
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by<br />Contacts</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h4 class="recommended-friends__title">Recommended Friends</h4>
+        <div class="recommended-friends__content">
+          <span>You have no recommended friends.</span>
+        </div>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span>
+            Go to Openchat Home
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5>#BTS</h5>
+            <h6>#BTS #ARMY #FRIENDS</h6>
+            <div class="open-post__info">
+              <img
+                class="open-post__member-image"
+                src="http://ikakao1661.cafe24.com/images/fancy/kakao-big_epoxy_sticker_MZ_rep.jpg"
+              />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__state">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <img
+              class="open-post__main-image"
+              src="https://d1z7ls0lpgvz0q.cloudfront.net/media/filer_public/b2/e7/b2e7b412-0c74-458a-9114-23b5b79f1b70/39364hr_dreamy.jpg"
+            />
+            <div class="open-post__likes">
+              <i class="fas fa-heart"></i>
+              <span class="open-post__likes-count">326</span>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5>Bts Gang~</h5>
+            <h6>#englishonly #ipurpleyou #jimin #taeta...</h6>
+            <div class="open-post__info">
+              <img
+                class="open-post__member-image"
+                src="https://toppng.com/uploads/preview/kakaotalk-friends-apeach-stickers-by-peach-kakao-11563391210dvjijsmtqg.png"
+              />
+              <span class="open-post__member-count">299 members</span>
+              <div class="divider"></div>
+              <span class="open-post__state">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <img
+              class="open-post__main-image"
+              src="https://assets.teenvogue.com/photos/5f4b199ccdf5ef8a7ed62a1d/master/pass/tout.jpg"
+            />
+            <div class="open-post__likes">
+              <i class="fas fa-heart"></i>
+              <span class="open-post__likes-count">215</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link badge--parent" href="chats.html">
+            <span class="badge badge--chat">1</span>
+            <i class="far fa-comment fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn nav__btn--selected">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link badge--parent" href="more.html">
+            <span class="badge badge--new"></span>
+            <i class="fas fa-ellipsis-h fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Only Mobile -->
+    <div id="mobile-only">
+      <span>Your screen is too big!</span>
+    </div>
+
+    <!-- Only Portrait -->
+    <div id="portrait-only">
+      <span>Please turn your phone vertically!</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

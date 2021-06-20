@@ -1,0 +1,42 @@
+.badge--parent {
+  position: relative;
+}
+
+.badge {
+  background-color: #ff6229;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@keyframes badgeAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg) translateY(-6px);
+  }
+  100% {
+    transform: rotateY(0deg) translateY(0);
+  }
+}
+
+.badge--chat {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  left: 10px;
+  bottom: 10px;
+  animation: badgeAnimation 3s ease-in-out infinite;
+}
+
+.badge--new {
+  width: 4px;
+  height: 4px;
+  left: 22px;
+  bottom: 22px;
+}

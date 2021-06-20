@@ -1,0 +1,60 @@
+@keyframes onlyNoteFadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: none;
+  }
+  55% {
+    transform: skewX(-15deg);
+  }
+  70% {
+    transform: none;
+  }
+  85% {
+    transform: skewX(-15deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+#mobile-only > span,
+#portrait-only > span {
+  will-change: transform;
+  animation: onlyNoteFadeIn 2s ease-in-out;
+}
+
+#mobile-only,
+#portrait-only {
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+#portrait-only {
+  z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile-only {
+    visibility: hidden;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #portrait-only {
+    visibility: hidden;
+  }
+}

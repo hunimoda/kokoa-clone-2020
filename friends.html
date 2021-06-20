@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-lock"></i>
+        <span>11%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span>
+          <i class="fas fa-search fa-lg"></i>
+        </span>
+        <span>
+          <i class="fas fa-music fa-lg"></i>
+        </span>
+        <span>
+          <a href="settings.html">
+            <i class="fas fa-cog fa-lg spin-cog"></i>
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <!-- Friends Display -->
+    <a id="friends-display-link" href="#">
+      <i class="fas fa-info-circle"></i>
+      Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="main-screen">
+      <!-- User Component -->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            class="user-component__avatar user-component__avatar--lg"
+            src="https://wallpapercave.com/wp/wp6683027.png"
+            alt="user-photo"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Nicolas</h4>
+            <!--<h6 class="user-component__subtitle">
+              Please check your Kakao Account.
+            </h6>-->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <!-- Channel -->
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="https://i0.wp.com/forhappywomen.com/wp-content/uploads/2018/11/%EC%82%B0%EB%B6%80%EC%9D%B8%EA%B3%BC-%ED%8F%AC%ED%95%B4%ED%94%BC%EC%9A%B0%EB%A8%BC-%EB%AC%B8%EC%9D%98-%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%B9%9C%EA%B5%AC-%EB%B2%84%ED%8A%BC.png?resize=586%2C586&ssl=1"
+              alt="user-photo"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title-regular">
+                Channel
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn nav__btn--selected">
+          <a class="nav__link" href="friends.html">
+            <i class="fas fa-user fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link badge--parent" href="chats.html">
+            <span class="badge badge--chat">1</span>
+            <i class="far fa-comment fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link badge--parent" href="more.html">
+            <span class="badge badge--new"></span>
+            <i class="fas fa-ellipsis-h fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+      <i class="fas fa-comment fa-lg"></i>
+    </div>
+
+    <!-- Only Mobile -->
+    <div id="mobile-only">
+      <span>Your screen is too big!</span>
+    </div>
+
+    <!-- Only Portrait -->
+    <div id="portrait-only">
+      <span>Please turn your phone vertically!</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
